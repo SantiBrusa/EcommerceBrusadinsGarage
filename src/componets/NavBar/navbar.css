@@ -1,0 +1,21 @@
+.NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(100, 97, 97, 0.575);
+}
+
+.NavBar img {
+  width: 10vw;
+}
+
+.NavBar ul {
+  display: flex;
+  list-style: none;
+}
+
+.NavBar ul a {
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+}
