@@ -1,21 +1,25 @@
 import "./navbar.css";
 import logo from "../../assets/img/logo-removebg-preview.png";
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <nav className="NavBar">
-      <img src={logo} alt="" />
+      <Link to="/">
+        <img src={logo} alt="" />
+      </Link>
+
       <h1>Brusadin's Garage</h1>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link to="/category/shampoo">Shampoo</Link>
         </li>
         <li>
-          <a href="#">Servicios</a>
+          <Link to="/category/ceras">Ceras</Link>
         </li>
         <li>
-          <a href="#">Productos</a>
+          <Link to="/category/renovadores">Renovadores</Link>
         </li>
       </ul>
 

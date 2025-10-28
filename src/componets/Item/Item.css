@@ -1,0 +1,27 @@
+.Item {
+  border: solid;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(170, 168, 168);
+}
+
+.Container-img {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 25vh;
+}
+
+.Item-img {
+  width: auto;
+  height: 100%;
+}
+
+.buttonInf {
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(255, 217, 0);
+  font-size: 1.2rem;
+}

@@ -3,7 +3,6 @@
   align-items: center;
 }
 
-.iconoCarrito img {
-  width: 3vw;
-  margin: 1em;
+.iconoCarrito p {
+  margin: 10px;
 }
