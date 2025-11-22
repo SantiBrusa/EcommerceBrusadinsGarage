@@ -1,4 +1,7 @@
+import db from "../db/db.js";
+import { collection, addDoc } from "firebase/firestore";
 
+// import data from "../data/products.json" assert {type: "json"}; // Para usar .json y no un array 
 
 const products = [
   {
@@ -57,12 +60,18 @@ const products = [
   },
 ];
 
-const getProducts = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(products);
-    }, 2000);
-  });
-};
+const seedProducts = async() => {
+    try {   
+        const productsRef = collection(db, "products");
 
-export default getProducts;
+        products.map( async( {id, ...dataProduct} ) => {
+            await addDoc(productsRef, dataProduct);
+        });
+
+        console.log("Productos subidos")
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+seedProducts();

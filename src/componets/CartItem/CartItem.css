@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 20vw;
+  align-items: center;
+  background-color: rgb(170, 168, 168);
+  margin: 1em;
+}
+
+.item-buttom {
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  height: 25vh;
+}
+
+.item-img {
+  width: auto;
+  height: 100%;
+}
