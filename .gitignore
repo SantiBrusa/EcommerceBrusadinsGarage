@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 src/componets/Ejemplos/
-src/data
+src/data/
+.env
 
 # Editor directories and files
 .vscode/*
